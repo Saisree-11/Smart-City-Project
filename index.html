@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Darjeeling Smart City — Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="brand">Darjeeling Smart City</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="food.html">Food</a></li>
+      <li><a href="plan.html">Plan Your Trip</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="ai.html">AI Recommendations</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="homeHero">
+    <div class="hero-overlay">
+      <h1>Welcome to Darjeeling</h1>
+      <p>The Queen of the Hills — now as a Smart City</p>
+      <a class="button" href="#attractions">Explore Attractions</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="attractions" class="content-card">
+      <h2>Explore Attractions — Top 10 Places</h2>
+      <p class="lead">Hand-picked must-see places in and around Darjeeling, with recommended times to visit.</p>
+
+      <div class="grid" id="attractionGrid">
+        <!-- JS will populate the ten attraction cards on page load -->
+      </div>
+    </section>
+
+    <section class="content-card">
+      <h2>Hotels Nearby</h2>
+      <p class="lead">Quick highlights — open the Hotels page for full listings.</p>
+      <div class="grid">
+
+        <div class="card small-card">
+          <!-- ⭐ Replace hotel1.jpg with your downloaded file name -->
+          <image:"/h1.webp", alt="Hotel 1">
+          <h3>Riverside Stay</h3>
+          <p>Category: Boutique · Rating: ★★★★☆</p>
+        </div>
+
+        <div class="card small-card">
+          <!-- ⭐ Replace hotel2.jpg -->
+          <image:"/h2.jpg", alt="Hotel 2">
+          <h3>Mountain View Resort</h3>
+          <p>Category: Resort · Rating: ★★★★★</p>
+        </div>
+
+        <div class="card small-card">
+          <!-- ⭐ Replace hotel3.jpg -->
+          <image:"/h3.jpg", alt="Hotel 3">
+          <h3>Tea-Garden Inn</h3>
+          <p>Category: Homestay · Rating: ★★★★☆</p>
+        </div>
+
+      </div>
+
+      <p style="margin-top:12px;"><a class="link" href="hotels.html">See all hotels →</a></p>
+    </section>
+
+    <section class="content-card" id="contact">
+      <h2>Contact</h2>
+      <p>For contact: saisree.paladugu29@gmail.com · +91 9740390196</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Darjeeling Smart City • Eco-Tourism • Green mountains and lakes theme</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AI Recommendations — Darjeeling Smart City</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="brand">Darjeeling Smart City</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="food.html">Food</a></li>
+      <li><a href="plan.html">Plan Your Trip</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="ai.html" class="active">AI Recommendations</a></li>
+    </ul>
+  </nav>
+
+  <header class="sub-hero">
+    <h1>AI-powered Suggestions</h1>
+    <p>Simple demo: recommendations adapt to basic inputs (time of day, preference).</p>
+  </header>
+
+  <main>
+    <section class="content-card">
+      <h2>Tell us a little:</h2>
+      <div class="form">
+        <label>Time of day:
+          <select id="timeOfDay">
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+          </select>
+        </label>
+        <label>Preference:
+          <select id="pref">
+            <option value="scenic">Scenic Views</option>
+            <option value="culture">Culture & Museums</option>
+            <option value="nature">Tea Gardens & Nature</option>
+          </select>
+        </label>
+        <button id="aiSuggestBtn">Get Recommendation</button>
+      </div>
+
+      <div id="aiCards" class="grid" style="margin-top:16px;"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Darjeeling Smart City</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

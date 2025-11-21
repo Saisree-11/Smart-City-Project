@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install backend deps
+      run: |
+        pip install -r backend/requirements.txt
+
+    - name: Run basic unit tests (if any)
+      run: echo "no tests"
+
+    - name: Build Docker image (optional)
+      run: |
+        docker build -t ghcr.io/${{ github.repository }}/smartcity:latest -f deploy/Dockerfile .

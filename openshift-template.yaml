@@ -1,0 +1,30 @@
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  name: smartcity
+spec:
+  replicas: 1
+  selector:
+    app: smartcity
+  template:
+    metadata:
+      labels:
+        app: smartcity
+    spec:
+      containers:
+      - name: smartcity
+        image: IMAGE_PLACEHOLDER
+        ports:
+        - containerPort: 5000
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: smartcity
+spec:
+  selector:
+    app: smartcity
+  ports:
+  - name: http
+    port: 80
+    targetPort: 5000
